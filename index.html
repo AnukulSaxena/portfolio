@@ -4,26 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+    <title>Document</title>
     <style>
-        img {
-            width: 100%;
+        body {
+            margin: 0;
+            background-color: #e8e8e8;
         }
 
-        .img-container {
-            position: absolute;
-            top: 0;
-            left: 0%;
-            right: 0%;
-            z-index: -1;
+        .first-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         h1 {
-            font-size: 8vw;
-            font-family: 'Monteserrat', sans-serif;
+            font-size: 6rem;
+            margin: 0;
+            color: #212121;
+        }
+
+        .pro-para {
+            font-size: 2.2rem;
+            margin-left: 12vw;
+            margin-right: 12vw;
+            margin-top: 2vh;
+            color: #212121;
+        }
+
+        .head-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100vw;
+            height: 10vh;
+            z-index: 10;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .head-section button {
+            display: none;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            position: absolute;
+            right: 2vw;
+        }
+
+        .head-para {
+            margin-left: 2rem;
+        }
+
+        .head-buttons {
+            margin-left: auto;
+            display: flex;
+        }
+
+        .menu-list {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: white;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            color: #212121;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .menu-list a {
+            padding: 15px 20px;
+            display: block;
             text-align: center;
-            margin-top: 10vw;
-            color: white;
+            text-decoration: none;
+            color: #212121;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .head-buttons {
+                display: none;
+            }
+
+            .head-section button {
+                display: block;
+            }
 
 
         }
@@ -31,16 +114,43 @@
 </head>
 
 <body>
-    <div>
-        <div class="img-container">
-            <img src="https://drive.google.com/uc?export=download&id=1DT3mYrLueVzA0M-rFDLIK5CZkbq9hv_A"
-                alt="Description of the image">
+    <header>
+        <div class="head-section">
+            <div class="head-para">
+                <a href="#"><span>Anukul Prakash Saxena</span></a>
+            </div>
+            <button id="menuToggle">&#9776;</button>
+            <div class="head-buttons">
+                <a href="#"><span>Home</span></a>
+                <a href="#"><span>About</span></a>
+                <a href="#"><span>Project</span></a>
+                <a href="#"><span>Contact</span></a>
+            </div>
+            <div class="menu-list">
+                <a href="#"><span>Home</span></a>
+                <a href="#"><span>About</span></a>
+                <a href="#"><span>Project</span></a>
+                <a href="#"><span>Contact</span></a>
+            </div>
         </div>
-        <div>
-            <h1>Hey I'm Anukul :)</h1>
+    </header>
+    <section>
+        <div class="first-container">
+            <h1>
+                Hey, I'm Anukul
+            </h1>
+            <p class="pro-para">a <u>pro</u>grammer </p>
+            <p class="pro-para">Passionate about web development. I'm into both frontend and backend
+                technologies.</p>
         </div>
-    </div>
+    </section>
 
+    <script>
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            var menuList = document.querySelector(".menu-list");
+            menuList.style.display = menuList.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
 </body>
 
 </html>
