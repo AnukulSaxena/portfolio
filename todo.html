@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8e8e8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #todo-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 800px;
+
+        }
+
+        #todo-header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .todo-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .todo-item span {
+            white-space: nowrap;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #add-todo {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #new-todo {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        #add-btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="todo-container">
+        <div id="todo-header">
+            <h2>To-Do List</h2>
+        </div>
+        <ul id="todo-list"></ul>
+        <div id="add-todo">
+            <input type="text" id="new-todo" placeholder="New task">
+            <button id="add-btn" onclick="addTodo()">Add</button>
+        </div>
+    </div>
+
+    <script>
+        // Load tasks from local storage on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            loadTasks();
+        });
+
+        function loadTasks() {
+            const todoList = document.getElementById("todo-list");
+            const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+            storedTasks.forEach(function (taskText) {
+                const li = createTaskElement(taskText);
+                todoList.appendChild(li);
+            });
+        }
+
+        function addTodo() {
+            const todoInput = document.getElementById("new-todo");
+            const todoList = document.getElementById("todo-list");
+
+            if (todoInput.value.trim() !== "") {
+                const li = createTaskElement(todoInput.value);
+                todoList.appendChild(li);
+
+                // Save tasks to local storage
+                saveTasks();
+
+                todoInput.value = "";
+            }
+        }
+
+        function createTaskElement(taskText) {
+            const li = document.createElement("li");
+            li.className = "todo-item";
+            li.innerHTML = `
+            <span>${taskText}</span>
+            <button class="delete-btn" onclick="deleteTodo(this)">Delete</button>
+        `;
+            return li;
+        }
+
+        function deleteTodo(button) {
+            const todoItem = button.parentElement;
+            todoItem.remove();
+
+            // Save tasks to local storage
+            saveTasks();
+        }
+
+        function saveTasks() {
+            const todoList = document.getElementById("todo-list");
+            const tasks = Array.from(todoList.children).map(function (task) {
+                return task.querySelector("span").innerText;
+            });
+
+            // Save tasks to local storage
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+        }
+    </script>
+
+</body>
+
+</html>
