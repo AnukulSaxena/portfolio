@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Header from './components/Header/Header'
-import ProjectSection from './components/ProjectSection/ProjectSection'
-import SkillSection from './components/SkillSection/SkillSection'
-import HeroSection from './components/HeroSection/HeroSection'
+import Header from './components/Header/Header.jsx'
+import ProjectSection from './components/ProjectSection/ProjectSection.jsx'
+import SkillSection from './components/SkillSection/SkillSection.jsx'
+import HeroSection from './components/HeroSection/HeroSection.jsx'
 function App() {
   const [count, setCount] = useState(0)
 

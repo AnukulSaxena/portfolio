@@ -1,6 +1,6 @@
 import React from 'react'
-import { data } from '../../data'
-import ProjectCard from './projectCard'
+import { data } from '../../data.js'
+import ProjectCard from './projectCard.jsx'
 function ProjectSection() {
     return (
         <section className='w-full h-fit bg-neutral-800 rounded-md px-10 py-5 mt-5 '>
