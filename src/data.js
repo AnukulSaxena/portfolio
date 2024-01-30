@@ -13,7 +13,7 @@ const data = [
     }
 ]
 
-const skills = ["HTML", "CSS", "JavaScript", "React Js", "Tailwind CSS",
+const skills = ["HTML", "CSS", "JavaScript", "React Js", "Tailwind",
     "Express Js", "Node Js", "mongoDB", "GIT", "C++", "Data Structures"];
 
 export { data, skills }

@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='w-full min-h-screen p-5 bg-neutral-700'>
+    <div className='w-full min-h-screen px-5 pt-20 bg-neutral-700'>
       <Header />
       <HeroSection />
       <ProjectSection />

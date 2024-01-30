@@ -6,7 +6,8 @@ function SkillSection() {
         <div
             className='w-full h-fit   bg-neutral-800 rounded-md px-10 py-5 mt-5 '
         >
-            <div className='text-2xl text-white mb-5 text-center md:text-start'>Skills</div>
+            <div className='text-3xl text-white mb-5 text-center md:text-start'>Skills</div>
+
             <div
                 className='flex flex-wrap text-lg gap-5'
             >
