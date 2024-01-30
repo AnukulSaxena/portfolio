@@ -3,10 +3,6 @@ import React, { useEffect } from 'react'
 function ProjectCard({ data }) {
     const { gitUrl, imgUrl, title, description } = data;
 
-
-    useEffect(() => {
-        console.log(data)
-    })
     return (
         <div className=" rounded-md hover:shadow-2xl mb-5 hover:cursor-pointer max-w-72 h-80">
 
