@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
     return (
-        <div className='lg:flex gap-5 w-full'>
+        <div className='lg:flex gap-5 mx-5 '>
             <div
                 className='bg-neutral-800 justify-center rounded-t-md flex lg:rounded-md lg:w-1/3 py-5  '
             >
