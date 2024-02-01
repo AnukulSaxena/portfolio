@@ -9,6 +9,7 @@ function ContactSection() {
     }
     return (
         <div
+            id='contactSection'
             className='py-8 lg:py-16 px-4 lg:px-72 xl:px-96 max-w-full bg-neutral-800 mx-5 mb-5 rounded-md'
         >
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
