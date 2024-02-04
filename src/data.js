@@ -10,6 +10,12 @@ const data = [
         description: "Express, Multer, Cloudinary, bcrypt, JWT, mongoose, mongoDB",
         gitUrl: "https://github.com/AnukulSaxena/test-backend",
         imgUrl: "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1706614936/portfolio/ebvk3ayopst5layk0exw.jpg"
+    },
+    {
+        title: "Portfolio",
+        description: "React, Tailwind CSS, Formspree",
+        gitUrl: "https://github.com/AnukulSaxena/portfolio",
+        imgUrl: "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1707008705/portfolio/wjykr0ucw68r9qopghfe.jpg"
     }
 ]
 
