@@ -37,20 +37,20 @@ function ContactSection() {
                 </div>
                 <div>
                     <label
-                        htmlFor="subject"
+                        htmlFor="name"
                         className="block mb-2 text-sm md:text-lg font-medium text-gray-300"
                     >
-                        Subject
+                        Name
                     </label>
                     <input
                         className="shadow-sm border text-sm md:text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-neutral-700 border-neutral-500  text-white "
-                        id="subject"
+                        id="name"
                         type="text"
-                        name="subject"
+                        name="name"
                     />
                     <ValidationError
-                        prefix="Subject"
-                        field="subject"
+                        prefix="Name"
+                        field="name"
                         errors={state.errors}
                     />
                 </div>

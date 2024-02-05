@@ -14,17 +14,7 @@ const Footer = () => {
                             className="self-center mb-10 text-xl font-semibold whitespace-nowrap  text-white"
                         >Anukul Saxena</button>
                         <div className="grid grid-cols-2 gap-6 sm:gap-20 sm:grid-cols-3">
-                            <div>
-                                <h2 className="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
-                                <ul className="text-gray-500  ext-gray-400 font-medium">
-                                    <li className="mb-4">
-                                        <a href="https://www.themoviedb.org/" className="hover:underline">TMDB</a>
-                                    </li>
-                                    <li>
-                                        <a href="" className="hover:underline"></a>
-                                    </li>
-                                </ul>
-                            </div>
+
                             <div>
                                 <h2 className="mb-6 text-sm font-semibold  uppercase  text-white">Find Me</h2>
                                 <ul className=" text-gray-400 font-medium">

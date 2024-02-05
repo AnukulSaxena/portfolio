@@ -15,7 +15,7 @@ function SkillSection() {
                     skills.map((skill, index) => (
                         <div
                             key={skill + index}
-                            className=' px-3 md:px-5 py-1 flex gap-2 items-center justify-center text-neutral-400 border-4 border-neutral-700   rounded-lg'
+                            className=' px-3 md:px-5 text-xl hover:bg-neutral-800 py-1 flex bg-neutral-900 gap-2 items-center justify-center text-neutral-400 border-4 border-neutral-700   rounded-md'
                         >
 
                             <span>{skill}</span>

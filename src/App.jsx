@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header/Header.jsx'
 import ProjectSection from './components/ProjectSection/ProjectSection.jsx'
 import SkillSection from './components/SkillSection/SkillSection.jsx'
@@ -9,8 +9,9 @@ import Social from './components/Social.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
-    <div className='w-screen min-h-screen pt-20 bg-neutral-700'>
+    <div className='w-screen scroll-smooth min-h-screen pt-20 bg-neutral-700'>
       <Social />
       <Header />
       <HeroSection />
