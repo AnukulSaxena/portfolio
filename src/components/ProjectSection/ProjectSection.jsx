@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { data } from "../../data.js";
 import ProjectCard from "./ProjectCard.jsx";
+import MiniProjectSection from "./MiniProjectSection.jsx";
+
 function ProjectSection() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -41,22 +43,3 @@ function ProjectSection() {
 }
 
 export default ProjectSection;
-
-const MiniProjectSection = ({ isOpen, setIsOpen }) => {
-  return (
-    <div
-      className={`flex  justify-center items-center  absolute top-0 h-full w-full ${
-        isOpen ? "left-0 bg-white" : "translate-x-full bg-transparent"
-      }  ease-in-out duration-1000 `}
-    >
-      <button
-        onClick={() => {
-          setIsOpen(false);
-        }}
-        className="p-5 bg-black rounded-e-sm"
-      >
-        X
-      </button>
-    </div>
-  );
-};
