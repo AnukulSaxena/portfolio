@@ -7,20 +7,17 @@ function ProjectSection() {
   const [isOpen, setIsOpen] = useState(false);
   const [load, setLoad] = useState(false);
   return (
-    <section className=" sm:h-[26rem] h-[40rem] overflow-hidden bg-neutral-800 rounded-md sm:px-10 mx-5  py-5 mt-5 relative ">
+    <section className=" sm:h-[26rem] h-[44rem]  overflow-hidden bg-neutral-800 rounded-md sm:px-10 mx-5 mt-5 relative ">
       <div
-        onLoad={() => {
-          setLoad(true);
-        }}
-        className={` rounded-md  sm:px-10 py-5  absolute top-0 h-full w-full ${
-          load ? "left-0 bg-neutral-800" : "translate-x-full"
-        }  ease-in-out duration-[2000ms] `}
+        className={` rounded-md  sm:px-20 py-5  absolute left-0  h-full w-full ${
+          !isOpen ? " bg-neutral-800" : "-translate-y-full"
+        }   duration-1000 `}
       >
         <div className="text-3xl text-white mb-5 text-center md:text-start">
           Projects
         </div>
 
-        <div className=" flex-col items-center flex sm:gap-10  sm:flex-row sm:justify-start overflow-y-scroll sm:overflow-y-hidden sm:overflow-x-scroll no-scrollbar sm:items-center max-h-[650px] ">
+        <div className=" flex-col pb-5 items-center flex sm:gap-10  sm:flex-row sm:justify-start overflow-y-scroll sm:overflow-y-hidden sm:overflow-x-scroll no-scrollbar sm:items-center max-h-[650px] ">
           {data.map((item, index) => (
             <ProjectCard key={index} data={item} />
           ))}

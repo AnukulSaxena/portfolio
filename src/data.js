@@ -7,7 +7,7 @@ const data = [
       "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1706613539/portfolio/sjd33y9sfpfvizegddep.jpg",
   },
   {
-    title: "Youtube Clone",
+    title: "Youtube Backend Clone",
     description: "Express, Multer, Cloudinary, bcrypt, JWT, mongoose, mongoDB",
     gitUrl: "https://github.com/AnukulSaxena/test-backend",
     imgUrl:

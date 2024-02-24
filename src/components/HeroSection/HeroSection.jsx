@@ -16,7 +16,7 @@ function HeroSection() {
           {" "}
           Anukul Prakash Saxena
         </h1>
-        <p className="text-white md:text-lg">
+        <p className="text-white md:text-lg text-balance">
           Web developer with a knack for turning ideas into digital wonders. I'm
           on a journey to explore, learn, and build exciting projects. Let's
           create something amazing together!

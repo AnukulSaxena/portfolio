@@ -3,14 +3,11 @@ import { miniProjectData } from "../../data.js";
 import ProjectCard from "./ProjectCard.jsx";
 
 const MiniProjectSection = ({ isOpen, setIsOpen }) => {
-  //   useEffect(() => {
-  //     window.onload(setIsOpen(true));
-  //   }, []);
   return (
     <div
-      className={` rounded-md  sm:px-10 py-5  absolute top-0 h-full w-full ${
-        isOpen ? "left-0 bg-neutral-800" : "translate-x-full bg-transparent"
-      }  ease-in-out duration-1000 `}
+      className={` rounded-md  sm:px-20 left-0  absolute h-full w-full ${
+        isOpen ? "  bg-neutral-800" : "translate-y-full bg-transparent"
+      } duration-1000 `}
     >
       <div className="flex py-5 justify-start w-full">
         <button
@@ -20,19 +17,18 @@ const MiniProjectSection = ({ isOpen, setIsOpen }) => {
           }}
         >
           <svg
-            viewBox="0 0 24 24"
-            className="h-10 w-10"
             xmlns="http://www.w3.org/2000/svg"
+            className="h-10 w-10"
+            viewBox="0 0 512 512"
           >
             <path
               className="fill-neutral-300"
-              d="M12.9268 18.8389C13.7351 19.5461 15 18.9721 15 17.8982L15 6.10192C15 5.02797 13.7351 4.454 12.9268 5.1612L6.61617 10.683C5.81935 11.3802 5.81935 12.6198 6.61617 13.317L12.9268 18.8389ZM13.5 17.3472L7.60393 12.1882C7.4901 12.0886 7.4901 11.9115 7.60393 11.8119L13.5 6.65286L13.5 17.3472Z"
-              fill="#212121"
-            />
+              d="M98.9 184.7l1.8 2.1 136 156.5c4.6 5.3 11.5 8.6 19.2 8.6 7.7 0 14.6-3.4 19.2-8.6L411 187.1l2.3-2.6c1.7-2.5 2.7-5.5 2.7-8.7 0-8.7-7.4-15.8-16.6-15.8H112.6c-9.2 0-16.6 7.1-16.6 15.8 0 3.3 1.1 6.4 2.9 8.9z"
+            ></path>
           </svg>
         </button>
       </div>
-      <div className=" flex-col items-center flex sm:gap-10  sm:flex-row sm:justify-start overflow-y-scroll sm:overflow-y-hidden sm:overflow-x-scroll no-scrollbar sm:items-center max-h-[650px] ">
+      <div className=" flex-col pb-5 items-center flex sm:gap-10  sm:flex-row sm:justify-start overflow-y-scroll sm:overflow-y-hidden sm:overflow-x-scroll no-scrollbar sm:items-center max-h-[650px] ">
         {miniProjectData.map((item, index) => (
           <ProjectCard key={index} data={item} />
         ))}
