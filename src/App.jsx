@@ -1,17 +1,16 @@
-import { useEffect, useState } from 'react'
-import Header from './components/Header/Header.jsx'
-import ProjectSection from './components/ProjectSection/ProjectSection.jsx'
-import SkillSection from './components/SkillSection/SkillSection.jsx'
-import HeroSection from './components/HeroSection/HeroSection.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import ContactSection from './components/ContactSection/ContactSection.jsx'
-import Social from './components/Social.jsx'
+import { useEffect, useState } from "react";
+import Header from "./components/Header/Header.jsx";
+import ProjectSection from "./components/ProjectSection/ProjectSection.jsx";
+import SkillSection from "./components/SkillSection/SkillSection.jsx";
+import HeroSection from "./components/HeroSection/HeroSection.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import ContactSection from "./components/ContactSection/ContactSection.jsx";
+import Social from "./components/Social.jsx";
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='w-screen scroll-smooth min-h-screen pt-20 bg-neutral-700'>
+    <div className="w-screen scroll-smooth min-h-screen pt-20 bg-neutral-700 overflow-hidden">
       <Social />
       <Header />
       <HeroSection />
@@ -20,8 +19,7 @@ function App() {
       <ContactSection />
       <Footer />
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;
