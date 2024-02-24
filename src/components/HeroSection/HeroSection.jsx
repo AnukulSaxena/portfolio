@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="lg:flex gap-5 mx-5 ">
+    <div className="lg:flex gap-5 mt-5 mx-5 ">
       <div className="bg-neutral-800 justify-center rounded-t-md flex lg:rounded-md lg:w-1/3 py-5  ">
         <img
           className="rounded-full lg:h-52 lg:w-52 w-1/2 "

@@ -10,7 +10,8 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-screen scroll-smooth min-h-screen pt-20 bg-neutral-700 overflow-hidden">
+    <div className="w-screen scroll-smooth min-h-screen  bg-neutral-700 overflow-hidden">
+      <div className="w-full h-16 bg-neutral-800"></div>
       <Social />
       <Header />
       <HeroSection />

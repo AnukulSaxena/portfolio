@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { miniProjectData } from "../../data.js";
 import ProjectCard from "./ProjectCard.jsx";
 
 const MiniProjectSection = ({ isOpen, setIsOpen }) => {
+  //   useEffect(() => {
+  //     window.onload(setIsOpen(true));
+  //   }, []);
   return (
     <div
       className={` rounded-md  sm:px-10 py-5  absolute top-0 h-full w-full ${
