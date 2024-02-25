@@ -14,7 +14,7 @@ function HeroSection() {
       >
         <img
           className="rounded-full lg:h-52 lg:w-52 w-1/2 "
-          src="https://res.cloudinary.com/dzv8lzuw2/image/upload/v1706621857/portfolio/abt6khhauxzknkujiswq.jpg"
+          src="/projectImages/profile.jpg"
           alt=""
         />
       </div>

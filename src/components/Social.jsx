@@ -8,12 +8,12 @@ function Social() {
   }, []);
 
   const svgClassname =
-    "hover:scale-125 duration-500 transition-transform md:w-8 md:h-8 w-6 h-6";
+    "hover:scale-125  duration-500 transition-transform md:w-8 md:h-8 w-6 h-6";
   return (
     <div
-      className={`fixed z-50 space-y-3 transition-transform left-0 ease-in-out duration-1000 delay-[1500ms] border-y border-r border-neutral-500 ${
+      className={`fixed z-50 space-y-3 transition-transform left-0 ease-in-out duration-1000 delay-[2000ms] border-y border-r border-neutral-500 ${
         load ? "-translate-x-full" : "translate-x-0"
-      } top-32 p-2 rounded-r-md bg-neutral-800`}
+      } top-28 p-2 rounded-r-md bg-neutral-800`}
     >
       <div>
         <a

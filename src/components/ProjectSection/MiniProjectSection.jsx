@@ -5,8 +5,8 @@ import ProjectCard from "./ProjectCard.jsx";
 const MiniProjectSection = ({ isOpen, setIsOpen }) => {
   return (
     <div
-      className={` rounded-md  sm:px-20 bg-neutral-800 left-0  absolute h-full w-full ${
-        isOpen ? "  " : "translate-y-full"
+      className={` rounded-md  sm:px-20 bg-neutral-800 inset-0  absolute h-full w-full ${
+        isOpen ? " translate-y-0" : "translate-y-full"
       } duration-1000 `}
     >
       <div className="flex py-5 justify-start w-full">
