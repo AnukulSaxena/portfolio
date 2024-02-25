@@ -7,11 +7,15 @@ function ProjectSection() {
   const [isOpen, setIsOpen] = useState(false);
   const [load, setLoad] = useState(false);
   return (
-    <section className=" sm:h-[26rem] h-[44rem]  overflow-hidden bg-neutral-800 rounded-md sm:px-10 mx-5 mt-5 relative ">
+    <section className=" sm:h-[26rem] h-[44rem]  overflow-hidden  rounded-md sm:px-10 mx-5 mt-5 relative ">
       <div
-        className={` rounded-md  sm:px-20 py-5  absolute left-0  h-full w-full ${
-          !isOpen ? " bg-neutral-800" : "-translate-y-full"
-        }   duration-1000 `}
+        onLoad={() => {
+          setLoad(true);
+        }}
+        className={` rounded-md bg-neutral-800  sm:px-20 py-5  absolute left-0  h-full w-full 
+        ${load ? "" : "translate-y-full"}
+
+        ${!isOpen ? " " : "-translate-y-full"}   duration-1000 `}
       >
         <div className="text-3xl text-white mb-5 text-center md:text-start">
           Projects

@@ -12,7 +12,7 @@ function HeroSection() {
       </div>
       <div className="bg-neutral-800 lg:rounded-md rounded-b-md lg:w-2/3 p-5  ">
         <p className=" text-yellow-500 text-lg">HELLO I'M</p>
-        <h1 className="mb-4 text-3xl font-extrabold text-white md:text-5xl lg:text-6xl">
+        <h1 className="mb-4 text-3xl text-nowrap font-extrabold text-white md:text-5xl xl:text-6xl">
           {" "}
           Anukul Prakash Saxena
         </h1>
