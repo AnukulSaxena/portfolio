@@ -3,22 +3,19 @@ const data = [
     title: "WatchLog",
     description: "React, Tailwind CSS, Redux Toolkit, Appwrite, Express",
     gitUrl: "https://github.com/AnukulSaxena/WatchLog",
-    imgUrl:
-      "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1706613539/portfolio/sjd33y9sfpfvizegddep.jpg",
+    imgUrl: "/projectImages/watchlog.jpg",
   },
   {
     title: "Youtube Backend Clone",
     description: "Express, Multer, Cloudinary, bcrypt, JWT, mongoose, mongoDB",
     gitUrl: "https://github.com/AnukulSaxena/test-backend",
-    imgUrl:
-      "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1706614936/portfolio/ebvk3ayopst5layk0exw.jpg",
+    imgUrl: "/projectImages/youtube.jpg",
   },
   {
     title: "Portfolio",
     description: "React, Tailwind CSS, Formspree",
     gitUrl: "https://github.com/AnukulSaxena/portfolio",
-    imgUrl:
-      "https://res.cloudinary.com/dzv8lzuw2/image/upload/v1707008705/portfolio/wjykr0ucw68r9qopghfe.jpg",
+    imgUrl: "/projectImages/youtube.jpg",
   },
 ];
 
