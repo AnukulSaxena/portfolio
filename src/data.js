@@ -15,7 +15,7 @@ const data = [
     title: "Portfolio",
     description: "React, Tailwind CSS, Formspree",
     gitUrl: "https://github.com/AnukulSaxena/portfolio",
-    imgUrl: "/projectImages/youtube.jpg",
+    imgUrl: "/projectImages/portfolio.jpg",
   },
 ];
 
